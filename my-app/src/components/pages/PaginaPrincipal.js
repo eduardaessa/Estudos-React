@@ -1,20 +1,29 @@
+import { Navegador } from "../common/Navegador/Navegador";
+import { ConteudoPaginaPrincipal } from "./ConteudoPaginaPrincipal";
 
+export function Conteudo() {
+  return (
+    <div>
+      <h2> Meu conteúdo </h2>
+    </div>
+  );
+}
 
-export function PaginaPrincipal(){
-    let link1 = (<a href="">Home</a>);
-    let link2 = (<a href="">Matrículas</a>);
-    let link3 = (<a href="">Disciplinas</a>);
+export function Cabecalho({paginaAtual}) {
+  return (
+    <header>
+      <h1> Matrícula UFC </h1>
+      <span> Você está na {paginaAtual} </span>
+    </header>
+  );
+}
 
-    return (<div>
-                <nav>
-                    <ul>
-                        <li> {link1} </li>
-                        <li> {link2} </li>
-                        <li> {link3} </li>
-                    </ul>
-                </nav>
-                <div>
-                    <h2> Meu conteúdo </h2>
-                </div>
-            </div>)
+export function PaginaPrincipal() {
+  return (
+    <div>
+      <Cabecalho paginaAtual="Página Principal"></Cabecalho>
+      <Navegador></Navegador>
+      <ConteudoPaginaPrincipal></ConteudoPaginaPrincipal>
+    </div>
+  );
 }
