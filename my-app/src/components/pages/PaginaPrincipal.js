@@ -20,7 +20,7 @@ export function Cabecalho({ paginaAtual }) {
 }
 
 export function Container() {
-  return (<div> oi </div>)
+  return (<div> </div>)
 }
 
 export function PaginaPrincipal() {
