@@ -1,5 +1,6 @@
 import { Navegador } from "../common/Navegador/Navegador";
 import { ConteudoPaginaPrincipal } from "./ConteudoPaginaPrincipal";
+import "./PaginaPrincipal.css";
 
 export function Conteudo() {
   return (
@@ -9,7 +10,7 @@ export function Conteudo() {
   );
 }
 
-export function Cabecalho({paginaAtual}) {
+export function Cabecalho({ paginaAtual }) {
   return (
     <header>
       <h1> Matrícula UFC </h1>
@@ -18,12 +19,18 @@ export function Cabecalho({paginaAtual}) {
   );
 }
 
+export function Container() {
+  return (<div> oi </div>)
+}
+
 export function PaginaPrincipal() {
   return (
     <div>
       <Cabecalho paginaAtual="Página Principal"></Cabecalho>
       <Navegador></Navegador>
-      <ConteudoPaginaPrincipal></ConteudoPaginaPrincipal>
+      <Container>
+        <ConteudoPaginaPrincipal></ConteudoPaginaPrincipal>
+      </Container>
     </div>
   );
 }

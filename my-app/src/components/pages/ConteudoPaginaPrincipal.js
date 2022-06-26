@@ -1,3 +1,5 @@
+import "./ConteudoPaginaPrincipal.css";
+
 export function ConteudoPaginaPrincipal(){
     let disciplinas = [
         {nome: "PIW",
@@ -5,11 +7,14 @@ export function ConteudoPaginaPrincipal(){
         {nome: "DSW",
         codigo: "QXD321"}
     ]
-    let lis = disciplinas.map((disciplina)=>(<li> {disciplina.nome} - {disciplina.codigo} </li>));
-    return (
-        <ul>
-            {lis}
-        </ul>
-    )
 
+    let lis = disciplinas.map((disciplina)=>(<li> {disciplina.nome} - {disciplina.codigo} </li>));
+
+    return (
+        <div className="container">
+            <ul>
+                {lis}
+            </ul>
+        </div>
+    )
 }

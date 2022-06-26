@@ -1,13 +1,13 @@
+import "./Navegador.css";
+
 export function Navegador() {
-  let Link = (props) => (<li> <a class="nav-link" href="props.link"> {props.linkTexto} </a> </li>)
+  let Link = (props) => (<a class="nav-link" href="props.link"> {props.linkTexto}</a>)
   
   return (
     <nav>
-      <ul>
-        <Link link="www.google.com" linkTexto="Google"></Link>
-        <Link link="www.github.com" linkTexto="Github"></Link>
-        <Link link="www.facebook.com" linkTexto="Facebook"></Link>
-      </ul>
+        <Link link="www.google.com" linkTexto="Google"> </Link>
+        <Link link="www.github.com" linkTexto="Github"> </Link>
+        <Link link="www.facebook.com" linkTexto="Facebook"> </Link>
     </nav>
   );
 }
