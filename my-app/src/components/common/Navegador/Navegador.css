@@ -8,12 +8,12 @@ nav {
 nav a {
     padding: 10px;
     text-decoration: none;
-    color: white;
+    color: aliceblue;
     background-color: pink;
 }
 
 nav a:hover {
-    background-color: white;
+    background-color: aliceblue;
 
     color: pink;
 }
