@@ -10,14 +10,7 @@ export function Conteudo() {
   );
 }
 
-export function Cabecalho({ paginaAtual }) {
-  return (
-    <header>
-      <h1> Matrícula UFC </h1>
-      <span> Você está na {paginaAtual} </span>
-    </header>
-  );
-}
+
 
 export function Container() {
   return (<div> </div>)
@@ -26,8 +19,7 @@ export function Container() {
 export function PaginaPrincipal() {
   return (
     <div>
-      <Cabecalho paginaAtual="Página Principal"></Cabecalho>
-      <Navegador></Navegador>
+      
       <ConteudoPaginaPrincipal> </ConteudoPaginaPrincipal>
     </div>
   );
