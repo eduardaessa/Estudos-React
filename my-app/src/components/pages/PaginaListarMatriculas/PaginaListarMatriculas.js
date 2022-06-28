@@ -1,5 +1,4 @@
 
-
 export function PaginaListarMatriculas(){
     return (
         <div>
