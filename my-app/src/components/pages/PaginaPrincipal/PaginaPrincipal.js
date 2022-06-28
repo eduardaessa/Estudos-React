@@ -1,5 +1,5 @@
-import { Navegador } from "../common/Navegador/Navegador";
-import { ConteudoPaginaPrincipal } from "./ConteudoPaginaPrincipal";
+import { Navegador } from "../../common/Navegador/Navegador";
+import { ConteudoPaginaPrincipal } from "../PaginaPrincipal/ConteudoPaginaPrincipal";
 import "./PaginaPrincipal.css";
 
 export function Conteudo() {
@@ -28,9 +28,7 @@ export function PaginaPrincipal() {
     <div>
       <Cabecalho paginaAtual="Página Principal"></Cabecalho>
       <Navegador></Navegador>
-      <Container>
-        <ConteudoPaginaPrincipal></ConteudoPaginaPrincipal>
-      </Container>
+      <ConteudoPaginaPrincipal> </ConteudoPaginaPrincipal>
     </div>
   );
 }

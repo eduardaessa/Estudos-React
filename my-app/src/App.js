@@ -1,10 +1,20 @@
 import './App.css';
-import { PaginaPrincipal } from './components/pages/PaginaPrincipal';
+import { ConteudoPaginaPrincipal } from './components/pages/PaginaPrincipal/ConteudoPaginaPrincipal.js';
+import { PaginaPrincipal } from './components/pages/PaginaPrincipal/PaginaPrincipal.js';
+import { BrowserRouter, Route } from 'react-router-dom';
+import { PaginaListarMatriculas } from './components/pages/PaginaListarMatriculas/PaginaListarMatriculas.js';
 
 function App() {
   return (
-    <PaginaPrincipal></PaginaPrincipal>
-  
+    <BrowserRouter>
+      <Route path="/">
+        <PaginaPrincipal></PaginaPrincipal>
+      </Route>
+      <Route path='/matricula'>
+        <PaginaListarMatriculas></PaginaListarMatriculas>
+      </Route>
+    </BrowserRouter>
+
   );
 }
 

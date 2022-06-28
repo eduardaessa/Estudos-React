@@ -1,0 +1,25 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: pink;
+    padding: 20px;
+    width: 80px;
+    margin: 10px;
+}
+
+.fundo-vermelho {
+    background-color: red;
+}
+
+.fundo-azul {
+    background-color: blue;
+}
