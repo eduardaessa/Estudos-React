@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import "./Navegador.css";
 
 function Cabecalho({ paginaAtual }) {
@@ -10,16 +11,24 @@ function Cabecalho({ paginaAtual }) {
 }
 
 export function Navegador() {
-  let Link = (props) => (<a class="nav-link" href="props.link"> {props.linkTexto}</a>)
-  
   return (
     <>
-    <Cabecalho> </Cabecalho>
-      <nav>
-          <Link link="www.google.com" linkTexto="Google"> </Link>
-          <Link link="www.github.com" linkTexto="Github"> </Link>
-          <Link link="www.facebook.com" linkTexto="Facebook"> </Link>
-      </nav>
+      <Cabecalho> </Cabecalho>
+        <nav>
+          <NavLink
+            exact
+            className="nav-link"
+            to="/">
+              Página Principal
+          </NavLink>
+          <NavLink
+            className="nav-link"
+            to="/matriculas">
+              Matriculas
+          </NavLink>
+            
+        
+        </nav>
     </>
   );
 }

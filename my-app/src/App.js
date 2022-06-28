@@ -8,7 +8,6 @@ function App() {
   return (  
     <BrowserRouter>
       <Navegador></Navegador>
-
      <Routes>
       <Route path='/' element={<PaginaPrincipal/>}>
       </Route>

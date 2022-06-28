@@ -1,4 +1,3 @@
-import { Navegador } from "../../common/Navegador/Navegador";
 import { ConteudoPaginaPrincipal } from "../PaginaPrincipal/ConteudoPaginaPrincipal";
 import "./PaginaPrincipal.css";
 

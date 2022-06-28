@@ -5,14 +5,14 @@ nav {
     justify-content: center;
 }
 
-nav a {
+.nav-link {
     padding: 10px;
     text-decoration: none;
     color: aliceblue;
     background-color: pink;
 }
 
-nav a:hover {
+.nav-link:hover {
     background-color: aliceblue;
 
     color: pink;
