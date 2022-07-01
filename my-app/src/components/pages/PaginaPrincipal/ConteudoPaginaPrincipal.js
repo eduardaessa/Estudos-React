@@ -1,23 +1,15 @@
 import "./ConteudoPaginaPrincipal.css";
-import classNames from 'classnames';
+import { Card } from "../../common/Cards/Card";
 
-function Card({nome, codigo, disponibilidade}) {
-    let nomeClasse = classNames("card", {
-        "fundo-vermelho": !disponibilidade, "fundo-azul": disponibilidade
-    })
-    // let nomeClasse = "card ";
-    // if(disponibilidade===false){
-    //     nomeClasse += "fundo-vermelho";
-    // } else {
-    //     nomeClasse += "fundo-azul";
-    // }
-    return (
-        <div className={nomeClasse}>
-            <h3> {nome} </h3>
-            <span> {codigo} </span>
-        </div>
-    )
-}
+// function Carda({nome, codigo, disponibilidade}) {
+
+//     return (
+//         <div >
+//             <h3> {nome} </h3>
+//             <span> {codigo} </span>
+//         </div>
+//     )
+// }
 
 export function ConteudoPaginaPrincipal(){
     let disciplinas = [
@@ -33,7 +25,9 @@ export function ConteudoPaginaPrincipal(){
 
     return (
         <div className="container">
-                {cards}
+            <h1> Oi </h1>
+            {cards}
+            
         </div>
     )
 }

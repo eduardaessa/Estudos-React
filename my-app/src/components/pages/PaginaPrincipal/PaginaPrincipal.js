@@ -1,4 +1,4 @@
-import { ConteudoPaginaPrincipal } from "../PaginaPrincipal/ConteudoPaginaPrincipal";
+import { ConteudoPaginaPrincipal } from "./ConteudoPaginaPrincipal";
 import "./PaginaPrincipal.css";
 
 export function Conteudo() {
@@ -10,7 +10,6 @@ export function Conteudo() {
 }
 
 
-
 export function Container() {
   return (<div> </div>)
 }
@@ -18,8 +17,8 @@ export function Container() {
 export function PaginaPrincipal() {
   return (
     <div>
-      
-      <ConteudoPaginaPrincipal> </ConteudoPaginaPrincipal>
+      <ConteudoPaginaPrincipal></ConteudoPaginaPrincipal>
+
     </div>
   );
 }
