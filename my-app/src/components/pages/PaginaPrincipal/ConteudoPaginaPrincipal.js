@@ -1,16 +1,6 @@
 import "./ConteudoPaginaPrincipal.css";
 import { Card } from "../../common/Cards/Card";
 
-// function Carda({nome, codigo, disponibilidade}) {
-
-//     return (
-//         <div >
-//             <h3> {nome} </h3>
-//             <span> {codigo} </span>
-//         </div>
-//     )
-// }
-
 export function ConteudoPaginaPrincipal(){
     let disciplinas = [
         {nome: "PIW",
@@ -25,9 +15,7 @@ export function ConteudoPaginaPrincipal(){
 
     return (
         <div className="container">
-            <h1> Oi </h1>
-            {cards}
-            
+            {cards}    
         </div>
     )
 }
